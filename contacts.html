@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Customize | Sajiri Creation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,400&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        body { background-color: #0a0a0a; color: #e5e5e5; font-family: 'Montserrat', sans-serif; }
+        .input-field { background: transparent; border-bottom: 1px solid #333; padding: 12px 0; width: 100%; outline: none; transition: 0.3s; }
+        .input-field:focus { border-color: #c5a059; }
+    </style>
+</head>
+<body class="py-20 px-10">
+    <a href="index.html" class="fixed top-10 left-10 text-[10px] tracking-widest text-stone-500 hover:text-white uppercase transition">← Return</a>
+
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-20">
+        <div>
+            <h1 class="text-6xl font-[Cormorant\ Garamond] italic mb-12">Reach Our Studio</h1>
+            <div class="space-y-8">
+                <div>
+                    <p class="text-xs text-stone-500 uppercase tracking-widest mb-2">Lead Designer</p>
+                    <p class="text-2xl font-light">Niki Tikki Bikki</p>
+                </div>
+                <div>
+                    <p class="text-xs text-stone-500 uppercase tracking-widest mb-2">Direct Line</p>
+                    <a href="tel:+919999999999" class="text-2xl font-light hover:text-gold transition">+91 9999999999</a>
+                </div>
+                <div>
+                    <p class="text-xs text-stone-500 uppercase tracking-widest mb-2">Concierge Email</p>
+                    <a href="mailto:crazy.nikki@danger.com" class="text-2xl font-light hover:text-gold transition">crazy.nikki@danger.com</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-stone-900/40 p-12 border border-stone-800">
+            <h3 class="text-2xl font-[Cormorant\ Garamond] italic mb-8 italic">Customization Inquiry</h3>
+            <form action="#">
+                <div class="grid grid-cols-2 gap-6 mb-8">
+                    <input type="text" placeholder="YOUR NAME" class="input-field">
+                    <input type="email" placeholder="EMAIL ADDRESS" class="input-field">
+                </div>
+                <div class="mb-8">
+                    <select class="input-field bg-stone-900 text-stone-500">
+                        <option>SELECT SERVICE</option>
+                        <option>Bespoke Design (New Piece)</option>
+                        <option>Engagement / Bridal</option>
+                        <option>Redesign Antique Piece</option>
+                    </select>
+                </div>
+                <div class="mb-8">
+                    <textarea placeholder="DESCRIBE YOUR VISION..." rows="4" class="input-field"></textarea>
+                </div>
+                <button class="w-full border border-gold text-gold py-4 text-xs tracking-widest uppercase hover:bg-gold hover:text-black transition duration-500">
+                    Send Inquiry
+                </button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

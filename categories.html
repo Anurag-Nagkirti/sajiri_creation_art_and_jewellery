@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collections | Sajiri Creation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;1,400&family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
+    <style>
+        body { background-color: #0a0a0a; color: #e5e5e5; font-family: 'Montserrat', sans-serif; }
+        .luxury-serif { font-family: 'Cormorant Garamond', serif; }
+        .sidebar { border-right: 1px solid #1a1a1a; }
+        .product-card { transition: all 0.5s ease; }
+        .product-card:hover { transform: translateY(-10px); }
+        .gold-accent { color: #c5a059; }
+        ::-webkit-scrollbar { width: 3px; }
+        ::-webkit-scrollbar-track { background: #0a0a0a; }
+        ::-webkit-scrollbar-thumb { background: #c5a059; }
+    </style>
+</head>
+<body class="flex flex-col md:flex-row min-h-screen">
+
+    <div class="md:hidden p-6 border-b border-stone-900 flex justify-between items-center bg-black sticky top-0 z-50">
+        <a href="index.html" class="text-gold uppercase tracking-tighter">← Back</a>
+        <h1 class="luxury-serif text-2xl italic">Collections</h1>
+    </div>
+
+    <aside class="w-full md:w-64 md:h-screen sticky top-0 p-10 sidebar bg-black flex flex-col justify-between">
+        <div>
+            <a href="index.html" class="hidden md:block text-[10px] tracking-[0.4em] text-stone-500 hover:text-white mb-20 uppercase transition">Main Menu</a>
+            <h2 class="luxury-serif text-4xl italic mb-12">Artistry</h2>
+            
+            <nav class="space-y-8 uppercase tracking-[0.2em] text-[11px]">
+                <a href="#traditional" class="block text-gold border-l border-gold pl-4">01. Traditional</a>
+                <a href="#contemporary" class="block text-stone-500 hover:text-white transition pl-4">02. Contemporary</a>
+                <a href="#bridal" class="block text-stone-500 hover:text-white transition pl-4">03. Bridal Muse</a>
+            </nav>
+        </div>
+        
+        <div class="mt-20">
+            <p class="text-[9px] text-stone-600 tracking-widest leading-loose">EST. 2026<br>MUMBAI, INDIA</p>
+        </div>
+    </aside>
+
+    <main class="flex-1 p-6 md:p-20 overflow-y-auto">
+        
+        <section id="traditional" class="mb-32">
+            <div class="flex justify-between items-end mb-12">
+                <h3 class="luxury-serif text-5xl">Traditional Heritage</h3>
+                <span class="text-[10px] text-stone-500 uppercase tracking-[0.3em]">6 Pieces</span>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="product-card">
+                    <div class="aspect-[4/5] bg-stone-900 mb-4 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?q=80&w=800" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h4 class="luxury-serif text-xl italic">Kundan Drops</h4>
+                            <p class="text-[10px] text-stone-500">22K Gold Plated</p>
+                        </div>
+                        <span class="text-gold font-light">₹4,500</span>
+                    </div>
+                </div>
+                <div class="product-card"> <div class="aspect-[4/5] bg-stone-900 mb-4"></div> <h4 class="luxury-serif text-xl">Heritage Jhumka</h4> <p class="text-gold">₹3,200</p> </div>
+                <div class="product-card"> <div class="aspect-[4/5] bg-stone-900 mb-4"></div> <h4 class="luxury-serif text-xl">Antique Mangalsutra</h4> <p class="text-gold">₹5,800</p> </div>
+                <div class="product-card"> <div class="aspect-[4/5] bg-stone-900 mb-4"></div> <h4 class="luxury-serif text-xl">Temple Kada</h4> <p class="text-gold">₹2,900</p> </div>
+                <div class="product-card"> <div class="aspect-[4/5] bg-stone-900 mb-4"></div> <h4 class="luxury-serif text-xl">Nath Collection</h4> <p class="text-gold">₹1,500</p> </div>
+                <div class="product-card"> <div class="aspect-[4/5] bg-stone-900 mb-4"></div> <h4 class="luxury-serif text-xl">Floral Meenakari</h4> <p class="text-gold">₹4,200</p> </div>
+            </div>
+        </section>
+
+        <section id="contemporary" class="mb-32">
+            <h3 class="luxury-serif text-5xl mb-12">Modern Fusion</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-center">
+                <div class="product-card"> <div class="aspect-square bg-stone-900 mb-4 rounded-full p-8"><div class="w-full h-full border border-stone-800 rounded-full flex items-center justify-center text-[10px]">IMAGE</div></div> <h4 class="luxury-serif text-xl">Geometric Hoops</h4> <p class="text-gold">₹1,800</p> </div>
+                <div class="product-card"> <div class="aspect-square bg-stone-900 mb-4"></div> <h4 class="luxury-serif text-xl">Minimalist Chain</h4> <p class="text-gold">₹2,100</p> </div>
+                <div class="product-card"> <div class="aspect-square bg-stone-900 mb-4"></div> <h4 class="luxury-serif text-xl">Abstract Silver Ring</h4> <p class="text-gold">₹1,200</p> </div>
+                <div class="product-card"> <div class="aspect-square bg-stone-900 mb-4"></div> <h4 class="luxury-serif text-xl">Pearl Layered Choker</h4> <p class="text-gold">₹3,500</p> </div>
+                <div class="product-card"> <div class="aspect-square bg-stone-900 mb-4"></div> <h4 class="luxury-serif text-xl">Titanium Cuff</h4> <p class="text-gold">₹4,000</p> </div>
+                <div class="product-card"> <div class="aspect-square bg-stone-900 mb-4"></div> <h4 class="luxury-serif text-xl">Drip Necklace</h4> <p class="text-gold">₹2,700</p> </div>
+            </div>
+        </section>
+
+        <section id="bridal" class="mb-32">
+            <h3 class="luxury-serif text-5xl mb-12">The Bridal Muse</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="product-card group relative"> 
+                    <div class="aspect-[16/9] bg-stone-900 mb-4"></div> 
+                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                        <a href="contacts.html" class="text-xs border border-white px-6 py-2">Inquire for Bespoke</a>
+                    </div>
+                    <h4 class="luxury-serif text-2xl">Grand Maharaja Set</h4> 
+                    <p class="text-gold">Price on Request</p> 
+                </div>
+                <div class="product-card"> <div class="aspect-[4/5] bg-stone-900 mb-4"></div> <h4 class="luxury-serif text-xl">Polki Bridal Choker</h4> <p class="text-gold">₹25,000</p> </div>
+                <div class="product-card"> <div class="aspect-[4/5] bg-stone-900 mb-4"></div> <h4 class="luxury-serif text-xl">Sajiri Statement Maangtikka</h4> <p class="text-gold">₹8,500</p> </div>
+                <div class="product-card"> <div class="aspect-[4/5] bg-stone-900 mb-4"></div> <h4 class="luxury-serif text-xl">Royal Bangle Set (Pair)</h4> <p class="text-gold">₹12,000</p> </div>
+                <div class="product-card"> <div class="aspect-[4/5] bg-stone-900 mb-4"></div> <h4 class="luxury-serif text-xl">Gold Waist Belt (Kamarbandh)</h4> <p class="text-gold">₹18,000</p> </div>
+                <div class="product-card"> <div class="aspect-[4/5] bg-stone-900 mb-4"></div> <h4 class="luxury-serif text-xl">Hand-carved Rani Haar</h4> <p class="text-gold">₹45,000</p> </div>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
